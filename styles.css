@@ -12,51 +12,30 @@ h1 {
 #searchInput {
     margin-bottom: 20px;
     padding: 10px;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
 }
 
 #myList {
-    list-style-type: none;
-    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: left;
+    display: none; /* Hide the list initially */
 }
 
-#myList li {
+#myList div {
     padding: 8px;
     margin-bottom: 5px;
     background-color: #fff;
     border: 1px solid #ddd;
+    width: fit-content;
 }
 
-#myList li a {
+#myList div a {
     text-decoration: none;
     color: #007BFF;
 }
 
-#myList li a:hover {
-    text-decoration: underline;
-}
-
-nav {
-    text-align: center; /* Center the nav content */
-}
-
-nav ul {
-    display: inline-block; /* Keep the list items inline */
-    list-style-position: inside; /* Keep the bullets close to the text */
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-nav ul li a:hover {
+#myList div a:hover {
     text-decoration: underline;
 }
