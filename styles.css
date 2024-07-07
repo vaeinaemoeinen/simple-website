@@ -1,73 +1,93 @@
+/* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
     text-align: center;
-    padding: 20px;
     margin: 0;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.red-image {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-#searchInput {
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 50%;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-#myList {
-    margin: 0 auto;
-    width: 60%;
-    text-align: left;
-    display: none; /* Hide the list initially */
+nav ul {
     padding: 0;
-    list-style-type: none;
+    list-style: none;
+    text-align: center;
 }
 
-#myList li {
-    padding: 15px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-#myList li:hover {
-    background-color: #f9f9f9;
-}
-
-#myList li a {
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #007BFF;
-    font-size: 18px;
-    display: block;
 }
 
-#myList li a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav {
-    margin-top: 30px;
+/* Hero Section */
+.hero {
+    background: #50b3a2;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
 }
 
+.hero .btn {
+    display: inline-block;
+    color: #50b3a2;
+    background: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.hero .btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
