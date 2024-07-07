@@ -1,39 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
 h1 {
     color: #333;
+    margin-bottom: 20px;
 }
 
 #searchInput {
     margin-bottom: 20px;
     padding: 10px;
-    width: 50%; /* Adjust the width to make it more narrow */
+    width: 50%;
     box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 #myList {
     margin: 0 auto;
-    width: fit-content;
+    width: 60%;
     text-align: left;
     display: none; /* Hide the list initially */
+    padding: 0;
 }
 
 #myList div {
-    padding: 8px;
-    margin-bottom: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
-    width: fit-content;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#myList div:hover {
+    background-color: #f9f9f9;
 }
 
 #myList div a {
     text-decoration: none;
     color: #007BFF;
+    font-size: 18px;
+    display: block;
 }
 
 #myList div a:hover {
