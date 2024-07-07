@@ -2,19 +2,48 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 h1 {
     color: #333;
 }
 
-p {
-    color: #666;
+#searchInput {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#myList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#myList li {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#myList li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#myList li a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center; /* Center the nav content */
 }
 
 nav ul {
-    list-style-type: none;
+    display: inline-block; /* Keep the list items inline */
+    list-style-position: inside; /* Keep the bullets close to the text */
     padding: 0;
 }
 

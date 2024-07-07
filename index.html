@@ -3,7 +3,9 @@
 <head>
     <title>Main Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -29,6 +31,14 @@
     </ol>
 
     <a href="https://www.example.com">This is a link to example.com</a>
+
+    <h1>Searchable List</h1>
+    <input type="text" id="searchInput" onkeyup="searchList()" placeholder="Search for items...">
+    <ul id="myList">
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+    </ul>
 
     <h1>Image Example</h1>
     <p>This is an example of embedding an image:</p>
