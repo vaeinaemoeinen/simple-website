@@ -11,6 +11,12 @@ h1 {
     margin-bottom: 20px;
 }
 
+.red-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
 #searchInput {
     margin-bottom: 20px;
     padding: 10px;
@@ -27,9 +33,10 @@ h1 {
     text-align: left;
     display: none; /* Hide the list initially */
     padding: 0;
+    list-style-type: none;
 }
 
-#myList div {
+#myList li {
     padding: 15px;
     margin-bottom: 10px;
     background-color: #fff;
@@ -39,17 +46,47 @@ h1 {
     transition: background-color 0.3s;
 }
 
-#myList div:hover {
+#myList li:hover {
     background-color: #f9f9f9;
 }
 
-#myList div a {
+#myList li a {
     text-decoration: none;
     color: #007BFF;
     font-size: 18px;
     display: block;
 }
 
-#myList div a:hover {
+#myList li a:hover {
     text-decoration: underline;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #f9f9f9;
 }

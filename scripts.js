@@ -1,9 +1,9 @@
 function searchList() {
-    var input, filter, list, divs, a, i, txtValue, keywords;
+    var input, filter, list, lis, a, i, txtValue, keywords;
     input = document.getElementById('searchInput');
     filter = input.value.toUpperCase();
     list = document.getElementById('myList');
-    divs = list.getElementsByTagName('div');
+    lis = list.getElementsByTagName('li');
 
     if (filter === '') {
         list.style.display = 'none'; // Hide the list if no input
@@ -11,14 +11,14 @@ function searchList() {
         list.style.display = 'block'; // Show the list if input is present
     }
 
-    for (i = 0; i < divs.length; i++) {
-        a = divs[i].getElementsByTagName('a')[0];
-        keywords = divs[i].getAttribute('data-keywords');
+    for (i = 0; i < lis.length; i++) {
+        a = lis[i].getElementsByTagName('a')[0];
+        keywords = lis[i].getAttribute('data-keywords');
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1 || keywords.toUpperCase().indexOf(filter) > -1) {
-            divs[i].style.display = '';
+            lis[i].style.display = '';
         } else {
-            divs[i].style.display = 'none';
+            lis[i].style.display = 'none';
         }
     }
 }
